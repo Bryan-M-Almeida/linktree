@@ -1,0 +1,113 @@
+body {
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(20, 20, 20) 100%);
+    font-family: monospace;
+    letter-spacing: 2px;
+    background-size: cover;
+}
+
+div {
+    position: relative;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    margin: 100px auto;
+    width: 300px;
+    background: linear-gradient(90deg, rgb(109, 107, 107) 0%, rgba(5, 4, 5, 0.733) 100%);
+    padding: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 22px;
+}
+
+.perfil {
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+.perfil:hover {
+    transition: 1s;
+    scale: 2;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    margin: 10px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 1s ease;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+a:hover {
+    background: lightgray;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Estilização do botão */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background: linear-gradient(135deg, #685d23, #FFA500);
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Efeito de clique */
+.theme-toggle:active {
+    transform: scale(0.9);
+}
+
+/* Modo escuro */
+.dark-mode {
+    background: linear-gradient(90deg, #444, #000000);
+    background-size: cover;
+    color: white;
+}
+
+.dark-mode a {
+    background: #312d2d;
+    color: white;
+}
+
+.dark-mode a:hover {
+    background-color: rgb(66, 63, 63);
+}
+
+.dark-mode .theme-toggle {
+    background: linear-gradient(135deg, #444, #221919);
+    color: white;
+}
