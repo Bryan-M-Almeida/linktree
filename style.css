@@ -1,0 +1,124 @@
+body {
+    background: linear-gradient(to bottom right, #4a4a4a, #2c2c2c);
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1px;
+    background-size: cover;
+    color: #f0f0f0;
+}
+
+div {
+    position: relative;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    margin: 100px auto;
+    width: 320px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.perfil {
+    width: 60px;
+    height: 60px;
+    border: 3px solid white;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.perfil:hover {
+    transform: scale(1.1);
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    margin: 15px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+li.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+a {
+    color: #f0f0f0;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 12px 15px;
+    border-radius: 10px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Estilização do botão */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background: black;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Efeito de clique */
+.theme-toggle:active {
+    transform: scale(0.9);
+}
+
+/* Modo escuro */
+.dark-mode {
+    background: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode div {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode a {
+    background: rgba(255, 255, 255, 0.2);
+    color: #e0e0e0;
+}
+
+.dark-mode a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.dark-mode .theme-toggle {
+    background: rgb(90, 81, 81);
+}
